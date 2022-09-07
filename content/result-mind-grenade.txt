@@ -1,0 +1,9 @@
+Writing using Promises:
+Hello this is file 1.
+Hello this is file 2.Writing using Promises:
+Hello this is file 1.
+Hello this is file 2.Writing using Promises:
+Hello this is file 1.
+Hello this is file 2.Writing using Promises:
+Hello this is file 1.
+Hello this is file 2.

@@ -1,23 +1,11 @@
 const http = require('http');
 
-const server = http.createServer(
-    (req, res) => {
-        if (req.url === "/") {
-            res.end("Home Page");
-        }
-        else if (req.url === "/about") {
-            for(let i = 0; i < 1000; i++) {
-                for(let j = 0; j < 100; j++) {
-                    console.log(`${i}, ${j}`);
-                }
-            }
-            res.end("ABOUT PAGE");
-        }
-    }
-);
+const server = http.createServer();
 
-server.listen(5000,
-    ()=> {
-        console.log("Server listening on 5000...");
-    }
-    )
+server.on ('request', (req, res) => {
+    res.end('Welcome');
+    console.log("Request made");
+});
+
+server.listen(5000);
+
